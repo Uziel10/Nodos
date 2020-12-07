@@ -8,7 +8,7 @@ package nodos;
 public class Lista 
     
     {
-        protected NodoU inicio,fin;
+       NodoU inicio,fin;
         public Lista()
         {
             inicio=null;
