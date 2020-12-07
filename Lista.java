@@ -40,31 +40,15 @@ public class Lista
     
     public void EliminarPrimero()
     {
-        if(inicio==fin)
-        {
-            inicio=null;
-            fin=null;
-        }
-            else
-            {
+ 
                 System.out.print("\n\nEL PRIMER NODO SE ELIMINO CORRECTAMENTE...\n");
              inicio=inicio.sig;
-            }
-        
     }
     
     public String EliminarUltimo()
     {
         String DATO=fin.D;
-        
-        if(inicio==fin)
-        {
-            inicio=null;
-            fin=null;
-        }
-        
-        else
-        {
+       
              System.out.print("\n\nEL ULTIMO NODO SE ELIMINO CORRECTAMENTE...\n");
             NodoU temporal=inicio;
             while(temporal.sig!=fin)
@@ -73,7 +57,7 @@ public class Lista
             }
             fin=temporal;
             fin.sig=null;
-        }
+        
             return DATO;
     }
      
